@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/form_box_bg"
+        android:orientation="vertical"
+        android:padding="0.5dp" >
+
+        <LinearLayout
+            style="@style/fieldset_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/block_head_text_view_style_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/basic_key" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/etname"
+                    style="@style/edit_text_style_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/full_name_key" />
+
+                <View
+                    style="@style/seperator_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp" />
+
+                <EditText
+                    android:id="@+id/etprimarycontact"
+                    style="@style/edit_text_style_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/contact_no_key" />
+
+                <View
+                    style="@style/seperator_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp" />
+
+                <EditText
+                    android:id="@+id/etemail"
+                    style="@style/edit_text_style_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_id_key" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/fieldset_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/block_head_text_view_style_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/present_address_key" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_street"
+                    style="@style/edit_text_style_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address_line_key" />
+
+                <View
+                    style="@style/seperator_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <EditText
+                        android:id="@+id/et_city"
+                        style="@style/edit_text_style_normal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/city_key" />
+
+                    <View
+                        style="@style/seperator_normal"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent" />
+
+                    <EditText
+                        android:id="@+id/et_pincode"
+                        style="@style/edit_text_style_normal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/pincode_key" />
+                </LinearLayout>
+
+                <View
+                    style="@style/seperator_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <EditText
+                        android:id="@+id/et_state"
+                        style="@style/edit_text_style_normal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/state_key" />
+
+                    <View
+                        style="@style/seperator_normal"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent" />
+
+                    <EditText
+                        android:id="@+id/et_country"
+                        style="@style/edit_text_style_normal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/country_key" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/fieldset_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/block_head_bg"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    style="@style/block_head_text_view_style_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:text="@string/permanent_address_key" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_address_permanent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:paddingRight="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_street2"
+                    style="@style/edit_text_style_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address_line_key" />
+
+                <View
+                    style="@style/seperator_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <EditText
+                        android:id="@+id/et_city2"
+                        style="@style/edit_text_style_normal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/city_key" />
+
+                    <View
+                        style="@style/seperator_normal"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent" />
+
+                    <EditText
+                        android:id="@+id/et_pincode2"
+                        style="@style/edit_text_style_normal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/pincode_key" />
+                </LinearLayout>
+
+                <View
+                    style="@style/seperator_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <EditText
+                        android:id="@+id/et_state2"
+                        style="@style/edit_text_style_normal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/state_key" />
+
+                    <View
+                        style="@style/seperator_normal"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent" />
+
+                    <EditText
+                        android:id="@+id/et_country2"
+                        style="@style/edit_text_style_normal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/country_key" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

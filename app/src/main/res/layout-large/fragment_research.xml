@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_box_bg"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:padding="0.5dp" >
+
+        <LinearLayout
+            style="@style/fieldset_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/block_head_text_view_style_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/describe_research" />
+
+            <EditText
+                android:id="@+id/etpaperTitle"
+                style="@style/edit_text_style_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/paper_title_key" />
+
+            <View
+                style="@style/seperator_large"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <EditText
+                android:id="@+id/etjournel"
+                style="@style/edit_text_style_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/journal_key" />
+
+            <View
+                style="@style/seperator_large"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <EditText
+                android:id="@+id/etvolume"
+                style="@style/edit_text_style_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/volume_key" />
+
+            <View
+                style="@style/seperator_large"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <EditText
+                android:id="@+id/etIssue"
+                style="@style/edit_text_style_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/issue_key" />
+
+            <View
+                style="@style/seperator_large"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <EditText
+                android:id="@+id/etdescription"
+                style="@style/edit_text_style_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/paper_description_key" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/research_container"
+            style="@style/fieldset_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

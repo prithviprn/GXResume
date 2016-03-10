@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="info_head_bg">#1190E1</color>
+    <color name="progress_bar_color">#009846</color>
+    <color name="block_head_bg">#DDE9F0</color>
+    <color name="text_color_dark">#0a4569</color>
+     <color name="blue_color_dark">#000080</color>
+    
+</resources>

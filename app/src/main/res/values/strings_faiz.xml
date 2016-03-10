@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="upload_img_key">Click on browse to upload your image</string>
+    <string name="btn_browse">browse</string>
+    <string name="skill_key">Your Area Of Expertise/Specilization</string>
+    <string name="template_name_key">Template Name</string>
+    <string name="price_key">Price</string>
+    <string name="attribute_key">Attribute</string>
+    <string name="colon">:</string>
+    <string name="value_key">Value</string>
+    <string name="prefrence_key">Set preference</string>
+    <string name="show_title_key">Show title</string>
+    <string name="show_image_key">Show image</string>
+    <string name="duration_key">Duration</string>
+    <string name="address_email_mob">Address-Email-Mobile</string>
+    <string name="address_email_mobile">Address\nEmail Mobile</string>
+    <string name="preview">Preview</string>
+    <string name="enter_text_key">enter your text</string>
+    
+    <string name="name_resume_title">Name [Resume Title]</string>
+    
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/block_head_bg"
+    android:orientation="horizontal"
+    android:weightSum="1.0" >
+
+    <TextView
+        android:id="@+id/tvitem"
+        style="@style/block_head_text_view_style_normal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/btn_edit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.15"
+        android:padding="@dimen/icon_padding_normal"
+        android:src="@drawable/ic_edit_dark" />
+
+    <ImageView
+        android:id="@+id/btn_dlt"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.15"
+        android:padding="@dimen/icon_padding_normal"
+        android:src="@drawable/ic_delete_dark" />
+
+</LinearLayout>

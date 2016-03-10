@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.52"
+        android:background="@color/dark_gray_screen" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <ImageView
+                    android:id="@+id/icon_add_new_resume"
+                    android:layout_width="@dimen/add_resume_logo_width_and_height_in_xlarge"
+                    android:layout_height="@dimen/add_resume_logo_width_and_height_in_xlarge"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/icon_add_new" />
+
+                <TextView
+                    android:id="@+id/tv_add_new_resume"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.75"
+                    android:paddingLeft="@dimen/text_new_resume_leftPadding_in_xlarge"
+                    android:text="@string/add_new_resume"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/screen2_text_size_in_xlarge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <ImageView
+                    android:id="@+id/icon_privacy"
+                    android:layout_width="@dimen/add_resume_logo_width_and_height_in_xlarge"
+                    android:layout_height="@dimen/add_resume_logo_width_and_height_in_xlarge"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/icon_privacy" />
+
+                <TextView
+                    android:id="@+id/tv_privacy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.75"
+                    android:paddingLeft="@dimen/text_new_resume_leftPadding_in_xlarge"
+                    android:text="@string/privacy"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/screen2_text_size_in_xlarge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+                <ImageView
+                    android:id="@+id/icon_saved"
+                    android:layout_width="@dimen/add_resume_logo_width_and_height_in_xlarge"
+                    android:layout_height="@dimen/add_resume_logo_width_and_height_in_xlarge"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/ic_save" />
+
+                <TextView
+                    android:id="@+id/tv_save"
+                    android:layout_width="0dp"
+                     android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/text_new_resume_leftPadding_in_xlarge"
+                    android:text="@string/save"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/screen2_text_size_in_xlarge" />
+            </LinearLayout>
+        
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.48"
+        android:background="@drawable/img_spalsh2" >
+    </ImageView>
+
+</LinearLayout>

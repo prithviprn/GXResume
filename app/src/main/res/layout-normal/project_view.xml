@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/tv_project_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/project_title_key"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_project_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:hint="@string/duration_key"
+            android:textSize="@dimen/text_size_normal"
+             android:textColor="@android:color/black"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_team_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textColor="@android:color/black"
+            android:text="@string/team_size_key"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textColor="@android:color/black"
+            android:text="@string/role_key"
+            android:textSize="@dimen/text_size_normal" />
+        
+         <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textColor="@android:color/black"
+            android:text="@string/description_key"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+</LinearLayout>

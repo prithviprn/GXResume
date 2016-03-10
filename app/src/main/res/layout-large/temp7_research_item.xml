@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/research_paper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <com.grexoft.resume.widgets.TextViewWithFont
+            android:id="@+id/txt_paper_title"
+            font:name="calibri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/paper_title_key"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_large"
+            font:type="bold" />
+
+        <com.grexoft.resume.widgets.TextViewWithFont
+            android:id="@+id/txt_journal_name"
+            font:name="calibri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:text="@string/journal_key"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/layout_research_papers2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <com.grexoft.resume.widgets.TextViewWithFont
+            android:id="@+id/txt_volume"
+            font:name="calibri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/volume_key"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_large" />
+
+        <com.grexoft.resume.widgets.TextViewWithFont
+            android:id="@+id/txt_issue"
+            font:name="calibri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:text="@string/issue_key"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+    <com.grexoft.resume.widgets.TextViewWithFont
+        android:id="@+id/txt_paper_description"
+        font:name="calibri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/description_key"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

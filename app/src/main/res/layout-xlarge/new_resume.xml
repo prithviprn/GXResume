@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_new_resume_title"
+        style="@style/block_head_text_view_style_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_new_resume" />
+
+    <EditText
+        android:id="@+id/edit_resume_title"
+        style="@style/edit_text_style_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/resume_title"
+        android:inputType="text" />
+
+    <View
+        style="@style/seperator_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <EditText
+        android:id="@+id/edit_resume_password"
+        style="@style/edit_text_style_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/resume_password_optional"
+        android:inputType="textPassword" />
+
+    <View
+        style="@style/seperator_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+</LinearLayout>

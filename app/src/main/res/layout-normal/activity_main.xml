@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="com.grexoft.resume.MainActivity" xmlns:app="http://schemas.android.com/apk/res/com.grexoft.resume">
+
+    <RelativeLayout
+        android:id="@+id/homeview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </android.support.v4.view.ViewPager>
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/titles"
+        android:layout_width="fill_parent"
+        app:radius="8dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:padding="10dip" />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:visibility="invisible"
+        android:alpha="0.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/saved"
+            android:layout_width="@dimen/btn_saved_width_in_normal"
+            android:layout_height="@dimen/btn_saved_height_in_normal"
+            android:layout_marginBottom="@dimen/btn_saved_marginBottom_in_normal"
+            android:background="@drawable/main_screen_btn_border"
+            android:text="@string/Saved"
+            android:textColor="@color/new_resume_color"
+            android:textSize="@dimen/btn_saved_text_size_in_normal"
+            android:textAllCaps="false"  
+            android:orientation="vertical"/>
+        
+
+        <LinearLayout
+            android:id="@+id/create"
+            android:layout_width="@dimen/btn_saved_width_in_normal"
+            android:layout_height="@dimen/btn_saved_height_in_normal"
+            android:background="@color/new_resume_color"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <ImageView
+                android:id="@+id/img_add_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/image_add_resume_padding_in_normal"
+                android:src="@drawable/icon_add_new" />
+
+            <TextView
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/NewResume"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_saved_text_size_in_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    
+
+</RelativeLayout>
+

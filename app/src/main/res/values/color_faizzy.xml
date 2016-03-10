@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="violet_screen">#9988B2</color>
+    <color name="new_resume_color">#083138</color>
+     <color name="dark_gray_screen">#898989</color>
+     <color name="green_screen">#648A91</color>
+       <color name="btn_pswd_bg">#0a4569</color>
+
+</resources>

@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:id="@+id/layout_left_child"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="#333333"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <com.grexoft.resume.widgets.TextViewWithFont
+                android:id="@+id/txt_name"
+                font:name="oswald"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/your_name"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                font:type="bold" />
+
+            <ImageView
+                android:id="@+id/image_png"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:cropToPadding="true"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:id="@+id/layout_contact_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_contact_child1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_phone"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_contact_hollow_white" />
+
+                    <TextView
+                        android:id="@+id/txt_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_contact_child2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_email"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_email_hollow_white" />
+
+                    <TextView
+                        android:id="@+id/txt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email_id"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.grexoft.resume.widgets.TextViewWithFont
+                android:id="@+id/txt_title"
+                font:name="oswald"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/resume_title"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                font:type="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ffffff" />
+
+            <LinearLayout
+                android:id="@+id/layout_skills_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <com.grexoft.resume.widgets.TextViewWithFont
+                    android:id="@+id/txt_heading_skills"
+                    font:name="oswald"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/skills"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_head_small"
+                    android:textStyle="bold"
+                    font:spacing="@dimen/spacing_head"
+                    font:type="bold" />
+
+                <ImageView
+                    android:id="@+id/image_skills"
+                    android:layout_width="@dimen/image_width_small"
+                    android:layout_height="@dimen/image_hight_small"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_skills_hollow_white" />
+
+                <LinearLayout
+                    android:id="@+id/layout_write_skills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_small" >
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_strengths_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <com.grexoft.resume.widgets.TextViewWithFont
+                    android:id="@+id/txt_heading_strengths"
+                    font:name="oswald"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/strengths"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_head_small"
+                    android:textStyle="bold"
+                    font:spacing="@dimen/spacing_head"
+                    font:type="bold" />
+
+                <ImageView
+                    android:id="@+id/image_strengths"
+                    android:layout_width="@dimen/image_width_small"
+                    android:layout_height="@dimen/image_hight_small"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_strength_hollow_white" />
+
+                <LinearLayout
+                    android:id="@+id/layout_write_strengths"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_small" >
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+
+<!--             <LinearLayout -->
+<!--                 android:id="@+id/layout_hobbies_parent" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginTop="10dp" -->
+<!--                 android:orientation="vertical" > -->
+
+<!--                 <model.TextViewWithFont -->
+<!--                     android:id="@+id/txt_hobbies" -->
+<!--                     font:name="oswald" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:gravity="center" -->
+<!--                     android:text="@string/hobbies" -->
+<!--                     android:textColor="#ffffff" -->
+<!--                     android:textSize="@dimen/text_size_small" -->
+<!--                     android:textStyle="bold" -->
+<!--                     font:spacing="@dimen/spacing_head" -->
+<!--                     font:type="bold" /> -->
+
+<!--                 <ImageView -->
+<!--                     android:id="@+id/image_hobbies" -->
+<!--                     android:layout_width="@dimen/image_width_small" -->
+<!--                     android:layout_height="@dimen/image_hight_small" -->
+<!--                     android:layout_gravity="center" -->
+<!--                     android:layout_marginTop="10dp" -->
+<!--                     android:src="@drawable/ic_hobbies_hollow_white" /> -->
+
+<!--                 <LinearLayout -->
+<!--                     android:id="@+id/layout_write_hobbies" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_marginBottom="10dp" -->
+<!--                     android:layout_marginTop="10dp" -->
+<!--                     android:orientation="vertical" -->
+<!--                     android:textColor="#ffffff" -->
+<!--                     android:textSize="@dimen/text_size_small" > -->
+<!--                 </LinearLayout> -->
+
+<!--                 <View -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="1px" -->
+<!--                     android:background="#ffffff" /> -->
+<!--             </LinearLayout> -->
+
+<!--             <LinearLayout -->
+<!--                 android:id="@+id/layout_achievements_parent" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginTop="10dp" -->
+<!--                 android:orientation="vertical" > -->
+
+<!--                 <model.TextViewWithFont -->
+<!--                     android:id="@+id/txt_achievements" -->
+<!--                     font:name="oswald" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:gravity="center" -->
+<!--                     android:text="@string/achievements" -->
+<!--                     android:textColor="#ffffff" -->
+<!--                     android:textSize="@dimen/text_size_small" -->
+<!--                     android:textStyle="bold" -->
+<!--                     font:spacing="@dimen/spacing_head" -->
+<!--                     font:type="bold" /> -->
+
+<!--                 <ImageView -->
+<!--                     android:id="@+id/image_achievements" -->
+<!--                     android:layout_width="@dimen/image_width_small" -->
+<!--                     android:layout_height="@dimen/image_hight_small" -->
+<!--                     android:layout_gravity="center" -->
+<!--                     android:layout_marginTop="10dp" -->
+<!--                     android:src="@drawable/ic_achievement_hollow_white" /> -->
+
+<!--                 <LinearLayout -->
+<!--                     android:id="@+id/layout_write_achievements" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_marginBottom="10dp" -->
+<!--                     android:layout_marginTop="10dp" -->
+<!--                     android:orientation="vertical" -->
+<!--                     android:textColor="#ffffff" -->
+<!--                     android:textSize="@dimen/text_size_small" > -->
+<!--                 </LinearLayout> -->
+
+<!--                 <View -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="1px" -->
+<!--                     android:background="#ffffff" /> -->
+<!--             </LinearLayout> -->
+
+<!--             <LinearLayout -->
+<!--                 android:id="@+id/layout_extra_curricular_parent" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginTop="10dp" -->
+<!--                 android:orientation="vertical" > -->
+
+<!--                 <model.TextViewWithFont -->
+<!--                     android:id="@+id/txt_extra_curricular" -->
+<!--                     font:name="oswald" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:gravity="center" -->
+<!--                     android:text="@string/extra_curricular" -->
+<!--                     android:textColor="#ffffff" -->
+<!--                     android:textSize="@dimen/text_size_small" -->
+<!--                     android:textStyle="bold" -->
+<!--                     font:spacing="@dimen/spacing_head" -->
+<!--                     font:type="bold" /> -->
+
+<!--                 <ImageView -->
+<!--                     android:id="@+id/image_extra_curricular" -->
+<!--                     android:layout_width="@dimen/image_width_small" -->
+<!--                     android:layout_height="@dimen/image_hight_small" -->
+<!--                     android:layout_gravity="center" -->
+<!--                     android:layout_marginTop="10dp" -->
+<!--                     android:src="@drawable/ic_extra_curricular_hollow_white" /> -->
+
+<!--                 <LinearLayout -->
+<!--                     android:id="@+id/layout_write_extra_curricular" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_marginBottom="10dp" -->
+<!--                     android:layout_marginTop="10dp" -->
+<!--                     android:orientation="vertical" -->
+<!--                     android:textColor="#ffffff" -->
+<!--                     android:textSize="@dimen/text_size_small" > -->
+<!--                 </LinearLayout> -->
+<!--             </LinearLayout> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_right_child"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/layout_objective_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1.0" >
+
+                <LinearLayout
+                    android:id="@+id/layout_objective_child1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_objective"
+                        android:layout_width="@dimen/image_width_small"
+                        android:layout_height="@dimen/image_hight_small"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_objective_hollow" />
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_objective"
+                        font:name="oswald"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/objective"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_head_small"
+                        android:textStyle="bold"
+                        font:spacing="@dimen/spacing_head"
+                        font:type="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_objective_child2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt_write_objective"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/objective_details"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="10dp"
+                        android:background="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            
+
+            <LinearLayout
+                android:id="@+id/layout_edu_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/left_border_small"
+                android:clipChildren="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_edu_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_edu"
+                        android:layout_width="@dimen/image_width_small"
+                        android:layout_height="@dimen/image_hight_small"
+                        android:layout_marginLeft="@dimen/image_margin_left_small"
+                        android:layout_marginRight="@dimen/image_margin_right_small"
+                        android:background="@android:color/white"
+                        android:src="@drawable/ic_degree_hollow" />
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_education"
+                        font:name="oswald"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/educational_qualification"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_head_small"
+                        android:textStyle="bold"
+                        font:spacing="@dimen/spacing_head"
+                        font:type="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_wtite_edu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:orientation="vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" >
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/layout_exp_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/left_border_small"
+                android:clipChildren="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_exp_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_exp"
+                        android:layout_width="@dimen/image_width_small"
+                        android:layout_height="@dimen/image_hight_small"
+                        android:layout_marginLeft="@dimen/image_margin_left_small"
+                        android:layout_marginRight="@dimen/image_margin_right_small"
+                        android:background="@android:color/white"
+                        android:src="@drawable/ic_work_hollow" />
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_exp"
+                        font:name="oswald"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/work_exeperence"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_head_small"
+                        android:textStyle="bold"
+                        font:spacing="@dimen/spacing_head"
+                        font:type="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_wtite_exp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:orientation="vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_projects_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/left_border_small"
+                android:clipChildren="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_projects_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_projects"
+                        android:layout_width="@dimen/image_width_small"
+                        android:layout_height="@dimen/image_hight_small"
+                        android:layout_marginLeft="@dimen/image_margin_left_small"
+                        android:layout_marginRight="@dimen/image_margin_right_small"
+                        android:background="@android:color/white"
+                        android:src="@drawable/ic_project_hollow" />
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_projects"
+                        font:name="oswald"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/projects"
+                        android:textColor="@android:color/black"
+                       android:textSize="@dimen/text_size_head_small"
+                        android:textStyle="bold"
+                        font:spacing="@dimen/spacing_head"
+                        font:type="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_wtite_projects"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:orientation="vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_research_paper_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/left_border_small"
+                android:clipChildren="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_researce_paper_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_research_paper"
+                        android:layout_width="@dimen/image_width_small"
+                        android:layout_height="@dimen/image_hight_small"
+                        android:layout_marginLeft="@dimen/image_margin_left_small"
+                        android:layout_marginRight="@dimen/image_margin_right_small"
+                        android:background="@android:color/white"
+                        android:src="@drawable/ic_research_hollow" />
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_research_paper"
+                        font:name="oswald"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/research_papers"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_head_small"
+                        android:textStyle="bold"
+                        font:spacing="@dimen/spacing_head"
+                        font:type="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_write_research_paper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:orientation="vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" >
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/layout_hobbies_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/left_border_small"
+                android:clipChildren="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_hobbies_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_hobbies"
+                        android:layout_width="@dimen/image_width_small"
+                        android:layout_height="@dimen/image_hight_small"
+                        android:layout_marginLeft="@dimen/image_margin_left_small"
+                        android:layout_marginRight="@dimen/image_margin_right_small"
+                        android:background="@android:color/white"
+                        android:src="@drawable/ic_hobbies_hollow" />
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_hobbies"
+                        font:name="oswald"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/hobbies"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_head_small"
+                        android:textStyle="bold"
+                        font:spacing="@dimen/spacing_head"
+                        font:type="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_write_hobbies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_extra_curricular_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/left_border_small"
+                android:clipChildren="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_extra_curricular_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_extra_curricular"
+                        android:layout_width="@dimen/image_width_small"
+                        android:layout_height="@dimen/image_hight_small"
+                        android:layout_marginLeft="@dimen/image_margin_left_small"
+                        android:layout_marginRight="@dimen/image_margin_right_small"
+                        android:background="@android:color/white"
+                        android:src="@drawable/ic_extra_curricular_hollow" />
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_extra_curricular"
+                        font:name="oswald"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/extra_curricular"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_head_small"
+                        android:textStyle="bold"
+                        font:spacing="@dimen/spacing_head"
+                        font:type="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_write_extra_curricular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_achievements_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/left_border_small"
+                android:clipChildren="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_achievements_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_achievements"
+                        android:layout_width="@dimen/image_width_small"
+                        android:layout_height="@dimen/image_hight_small"
+                        android:layout_marginLeft="@dimen/image_margin_left_small"
+                        android:layout_marginRight="@dimen/image_margin_right_small"
+                        android:background="@android:color/white"
+                        android:src="@drawable/ic_achievement_hollow" />
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_achievements"
+                        font:name="oswald"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/achievements"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_head_small"
+                        android:textStyle="bold"
+                        font:spacing="@dimen/spacing_head"
+                        font:type="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_write_achievements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_personal_details_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/left_border_small"
+                android:clipChildren="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_personal_details_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginBottom="8dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_personal_details"
+                        android:layout_width="@dimen/image_width_small"
+                        android:layout_height="@dimen/image_hight_small"
+                        android:layout_marginLeft="@dimen/image_margin_left_small"
+                        android:layout_marginRight="@dimen/image_margin_right_small"
+                        android:background="@android:color/white"
+                        android:src="@drawable/ic_personal_hollow" />
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_personal_details"
+                        font:name="oswald"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/personal_details"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_head_small"
+                        android:textStyle="bold"
+                        font:spacing="@dimen/spacing_head"
+                        font:type="bold" />
+                </LinearLayout>
+
+                <!-- <LinearLayout -->
+                <!-- android:id="@+id/layout_wtite_personal_details" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:orientation="vertical" -->
+                <!-- android:clipChildren="false" -->
+                <!-- android:textSize="@dimen/text_size_small" -->
+                <!-- android:textColor="@android:color/black" > -->
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_reference_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/left_border_small"
+                android:clipChildren="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_reference_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_reference"
+                        android:layout_width="@dimen/image_width_small"
+                        android:layout_height="@dimen/image_hight_small"
+                        android:layout_marginLeft="@dimen/image_margin_left_small"
+                        android:layout_marginRight="@dimen/image_margin_right_small"
+                        android:background="@android:color/white"
+                        android:src="@drawable/ic_reference_hollow" />
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_reference"
+                        font:name="oswald"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/references"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_head_small"
+                        android:textStyle="bold"
+                        font:spacing="@dimen/spacing_head"
+                        font:type="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_write_reference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:orientation="vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" >
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            
+            
+            
+
+            <LinearLayout
+                android:id="@+id/layout_declaration_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    android:id="@+id/layout_declaration_child1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_declaration"
+                        android:layout_width="@dimen/image_width_small"
+                        android:layout_height="@dimen/image_hight_small"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_declaration_hollow" />
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_declaration"
+                        font:name="oswald"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/declaration"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_head_small"
+                        android:textStyle="bold"
+                        font:spacing="@dimen/spacing_head"
+                        font:type="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_declaration_child2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt_write_declaration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/declaration_details"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.grexoft.resume.widgets.TextViewWithFont
+                android:id="@+id/txt_date"
+                font:name="oswald"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/date"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                font:spacing="@dimen/spacing_head" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <com.grexoft.resume.widgets.TextViewWithFont
+                    android:id="@+id/txt_place"
+                    font:name="oswald"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/place"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small"
+                    font:spacing="@dimen/spacing_head" />
+
+                <TextView
+                    android:id="@+id/txt_signature"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:text="@string/signature"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

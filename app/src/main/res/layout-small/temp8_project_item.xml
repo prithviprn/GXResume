@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/template8_project_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:clipChildren="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="@dimen/item_image_width_small"
+        android:layout_height="@dimen/item_image_hight_small"
+        android:layout_marginTop="7.5dp"
+        android:clipChildren="false" >
+
+        <ImageView
+            android:id="@+id/image_projects"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginLeft="-2dp"
+            android:background="#ffffff"
+            android:src="@drawable/ic_ring" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/projects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <com.grexoft.resume.widgets.TextViewWithFont
+                android:id="@+id/txt_heading_projects"
+                font:name="oswald"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/project_title_key"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold"
+                font:spacing="@dimen/spacing_head"
+                font:type="bold"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:text="@string/duration_key"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            
+            <com.grexoft.resume.widgets.TextViewWithFont
+                android:id="@+id/txt_role"
+                font:name="oswald"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/role_key"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                font:spacing="@dimen/spacing_head"
+                font:type="bold" />
+
+            <TextView
+                android:id="@+id/txt_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_size_key"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description_key"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

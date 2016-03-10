@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="basic_key">Basic</string>
+    <string name="full_name_key">full name</string>
+    <string name="contact_no_key">contact no</string>
+    <string name="email_id_key">email id</string>
+    <string name="present_address_key">Present Address</string>
+    <string name="address_line_key">address line</string>
+    <string name="city_key">city</string>
+    <string name="pincode_key">pincode/zipcode</string>
+    <string name="state_key">state</string>
+    <string name="country_key">country</string>
+    <string name="permanent_address_key">Permanent Address</string>
+    
+    
+    <string name="date_of_birth_key">date of birth</string>
+    <string name="language_key">languages known</string>
+    <string name="nationality_ley">nationality</string>
+    <string name="father_name_key">father\'s name</string>
+    <string name="mother_name_key">mother\'s name</string>
+    <string name="add_more_key">add more fields</string>
+    <string name="enter_field_name_key">enter field\'s name</string>
+    <string name="custom_field_key">Custom Fields</string>
+    
+    
+    <string-array name="gender_array">
+        <item>select gender</item>
+        <item>male</item>
+        <item>female</item>        
+    </string-array>
+    
+    
+    <string name="focus_on_key">Focus on how you would benefit the employer by writing your career objective.</string>
+    <string name="objective_hint">write your objective</string>
+    <string name="select_from_below_key">Or select one from below by just tapping it.</string>
+    <string name="sample_objective_1">To work in pragmatic way in an organization, where I can show my talent &amp; enhance my skills to meet company goals and objective with full integrity and zest.</string>
+    <string name="sample_objective_2">My goal is to become associated with a company where I can utilize my skills and gain further experience while enhancing productivity of the company and reputation.</string>
+    <string name="sample_objective_3">To contribute superior project and operations management skills and experience in an IT Service Management role.</string>
+    <string name="sample_objective_4">To obtain a challenging position in a high quality engineering environment where my resourceful experience and academic skills will add value to organizational operations.</string>
+    <string name="sample_objective_5">A position in Marketing and Product Management with a focus on Project Coordination and Team Leadership.</string>
+    
+    <string name="declaretion_hint">Write your declaration</string>
+    <string name="select_from_below">Or select one from below by just tapping it.</string>
+    <string name="sample_declaration_1">I do hereby declare that the above given statements are true and correct to the best of my knowledge.</string>
+    <string name="sample_declaration_2">I hereby declare that the above cited information is true to the best of my knowledge and belief, if given a chance, I can prove myself.</string>
+    <string name="sample_declaration_3">I hereby declare that all the information provided here is correct to the best of my knowledge and belief and I promise to abide by all the norms laid down by your esteemed organization.</string>
+    <string name="sample_declaration_4">I hereby declare that all the information mentioned above is true to the best of my knowledge. I will make it my earnest endeavor to discharge competently and carefully the duties you may be pleased to entrust with me.</string>
+    
+    
+    <string name="write_about_education">Describe about your educational qualification in chronological order starting from the latest.</string>
+    <string name="degree_key">degree/qualification</string>
+    <string name="university_key">university/board</string>
+    <string name="passout_year_key">passout year</string>
+    <string name="result_key">CGPA/percentage</string>
+    
+    
+    <string name="describe_work">Describe about your work experience</string>
+    <string name="job_desig_key">job designation</string>
+    <string name="company_name_key">company name</string>
+    <string name="joining_date_key">joining date</string>
+    <string name="leaving_date_key">leaving date</string>
+    <string name="work_description_key">work description</string>
+    
+    
+    
+    <string name="describe_projects">Describe about your projects undertaken</string>
+    <string name="project_title_key">project title</string>
+    <string name="from_key">from</string>
+    <string name="to_key">to</string>
+    <string name="role_key">role</string>
+    <string name="team_size_key">team size</string>
+    <string name="description_key">description</string>
+    
+    
+    <string name="describe_research">Describe about your research, if you are a research scholar</string>
+    <string name="paper_title_key">paper title</string>
+    <string name="journal_key">journal</string>
+    <string name="volume_key">volume</string>
+    <string name="issue_key">issue</string>
+    <string name="paper_description_key">paper description</string>
+    
+    
+    <string name="describe_reference">Describe your reference if you have any.</string>
+    <string name="referer_name_key">full name</string>
+    <string name="referer_job_designation_key">designation</string>
+    <string name="referer_work_address_key">work address</string>
+    <string name="referer_email_key">email</string>
+    <string name="work_phone_key">work phone</string>
+    <string name="personal_phone_key">personal phone</string>
+    
+    
+    <string name="base64_public_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgCRLf45E/XJbkfWz7WZCPH3H6TDObGwNHt16DezuF+DPwdmcZf466DAuG5Db51xouFzY139FD5AfGUtDT48ltF7AKAaKTsB4loB0DUfHQaQSaDNjdlVXX2KM9V2wvBbnCw8iCXWwam3rGfWPtaebhlIdAHWnicecZBRWOB4sEJgtGgXlcSpXiV+hDPGhi9mnSKApnzQaCFGETTK6/ytwO53+XEfjsHtbzrJNQn4qSorv6FQDstDHgl99er+bAMYJGCHgVDsAxAP3EhNHYtgDPyh6t2Pbt5D1vSWn7v+wS/DDsylg7zrsSzgC9u4P1HQcVzNs5Prv/P2VWM1ofWtrAwIDAQAB</string>
+
+    <string-array name="text_size_content">
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+
+    <string-array name="font_family_content">
+        <item>Calibri</item>
+        <item>Cambria</item>
+        <item>Oswald</item>
+        <item>Garamond</item>
+        <item>Helvetica</item>
+    </string-array>
+
+    <string-array name="text_size_head">
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+    </string-array>
+
+    <string-array name="font_family">
+        <item>calibri light</item>
+        <item>cambria</item>
+        <item>oswald light</item>
+        <item>droid serif regular</item>
+    </string-array>
+
+    <string name="content_text_size">Content text size</string>
+    <string name="content_font_family">Content font</string>
+    <string name="heading_text_size">Heading text size</string>
+    <string name="heading_font_family">Heading font</string>
+    <string name="title_font_family">Title font</string>
+    <string name="title_text_size">Title text size</string>
+
+</resources>

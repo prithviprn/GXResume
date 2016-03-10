@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.grexoft.resume.TemplateChooserActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_template1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Template1" />
+
+        <Button
+            android:id="@+id/btn_template2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Template2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_template3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Template3" />
+
+        <Button
+            android:id="@+id/btn_template4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Template4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_template5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Template5" />
+
+        <Button
+            android:id="@+id/btn_template6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Template6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_template7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Template7" />
+
+        <Button
+            android:id="@+id/btn_template8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Template8" />
+    </LinearLayout>
+
+</LinearLayout>

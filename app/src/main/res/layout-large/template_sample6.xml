@@ -1,0 +1,670 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    tools:context="com.example.resumetemplate.Template1"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp" >
+
+        <LinearLayout
+            android:id="@+id/like_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="5dp"
+                android:text="Success!!"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="Pdf saved in personal resume folder. Like us on facebook."
+                android:textSize="@dimen/text_size_large" />
+
+            <!-- <com.facebook.widget.LikeView -->
+            <!-- android:id="@+id/like_view" -->
+            <!-- android:layout_width="250dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_gravity="center_horizontal" -->
+            <!-- android:layout_marginBottom="15dp" -->
+            <!-- android:layout_marginTop="15dp" /> -->
+        </LinearLayout>
+
+        <com.grexoft.resume.widgets.TextViewWithFont
+            android:id="@+id/txt_title"
+            font:name="calibri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:text="@string/resume_title"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            font:type="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#cccccc"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/layout_box1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="20" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="19"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/temp6_border"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <com.grexoft.resume.widgets.TextViewWithFont
+                    android:id="@+id/txt_name"
+                    font:name="calibri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/your_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    font:type="bold" />
+
+                <com.grexoft.resume.widgets.TextViewWithFont
+                    android:id="@+id/txt_address"
+                    font:name="calibri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/present_address_key"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.grexoft.resume.widgets.TextViewWithFont
+                    android:id="@+id/txt_contact"
+                    font:name="calibri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/contact"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.grexoft.resume.widgets.TextViewWithFont
+                    android:id="@+id/txt_email"
+                    font:name="calibri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/email_id"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_box2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="20" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="19"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/temp6_border"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/objective"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_objective"
+                        font:name="calibri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/objective"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        font:type="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_write_objective"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/objective_details"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_education"
+                        font:name="calibri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/educational_qualification"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        font:type="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/txt_write_education"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:textColor="@android:color/black" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/skills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_skills"
+                        font:name="calibri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/skills"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        font:type="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_write_skills"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/skills_details"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_box3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="20" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="19"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/temp6_border"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/work_experience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_work_experience"
+                        font:name="calibri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/work_exeperence"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        font:type="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/txt_write_work_experience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:textColor="@android:color/black" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/projects"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_projects"
+                        font:name="calibri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/projects"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        font:type="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/txt_write_projects"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_box4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="20" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="19"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/temp6_border"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/research_paper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_research_paper"
+                        font:name="calibri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/research_papers"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        font:type="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/txt_write_research_paper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:textColor="@android:color/black" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/strength"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_strengths"
+                        font:name="calibri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/strengths"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        font:type="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_write_strengths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strengths_details"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_box5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="20" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="19"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/temp6_border"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/achievements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_achievements"
+                        font:name="calibri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/achievements"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        font:type="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_write_achievements"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/achievements_details"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/extra_curricular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_extra_curricular"
+                        font:name="calibri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/extra_curricular"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        font:type="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_write_extra_curricular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/extra_curricular_details"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hobbies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_hobbies"
+                        font:name="calibri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/hobbies"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        font:type="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_write_hobbies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hobbies_details"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_box6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="20" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="19"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/temp6_border"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/personal_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_personal_details"
+                        font:name="calibri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/personal_details"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        font:type="bold" />
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/txt_size" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:textColor="@android:color/black" -->
+                    <!-- android:textSize="@dimen/text_size_large" /> -->
+                    <!-- <LinearLayout -->
+                    <!-- android:id="@+id/txt_write_personal_details" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:textColor="@android:color/black" -->
+                    <!-- android:orientation="vertical" > -->
+                    <!-- </LinearLayout> -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <com.grexoft.resume.widgets.TextViewWithFont
+                        android:id="@+id/txt_heading_reference"
+                        font:name="calibri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/references"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        font:type="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/txt_write_reference"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:textColor="@android:color/black" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#cccccc"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/declaration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.grexoft.resume.widgets.TextViewWithFont
+                android:id="@+id/txt_heading_declaration"
+                font:name="calibri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/declaration"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"
+                font:type="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_declaration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/declaration_details"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+
+        <com.grexoft.resume.widgets.TextViewWithFont
+            android:id="@+id/txt_date"
+            font:name="calibri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/date"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_large" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <com.grexoft.resume.widgets.TextViewWithFont
+                android:id="@+id/txt_place"
+                font:name="calibri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/place"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.grexoft.resume.widgets.TextViewWithFont
+                android:id="@+id/txt_signature"
+                font:name="calibri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:text="@string/signature"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

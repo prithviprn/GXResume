@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/personal_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/tv_attribute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="left"
+            android:text="@string/attribute_key"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_xlarge" />
+
+        <TextView
+            android:id="@+id/tv_colon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_xlarge" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:gravity="left"
+            android:text="@string/value_key"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_xlarge" />
+    </LinearLayout>
+
+</LinearLayout>

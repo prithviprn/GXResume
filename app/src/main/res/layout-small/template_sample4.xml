@@ -1,0 +1,567 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.resumetemplate.Template1"
+    tools:ignore="MergeRootFrame" >
+
+    <TableLayout
+        android:id="@+id/template4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="15px" >
+
+        <LinearLayout
+            android:id="@+id/like_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="5dp"
+                android:text="Success!!"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="Pdf saved in personal resume folder. Like us on facebook."
+                android:textSize="@dimen/text_size_small" />
+
+            <!-- <com.facebook.widget.LikeView -->
+            <!-- android:id="@+id/like_view" -->
+            <!-- android:layout_width="250dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_gravity="center_horizontal" -->
+            <!-- android:layout_marginBottom="15dp" -->
+            <!-- android:layout_marginTop="15dp" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/your_name"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/resume_title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_address_email_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:text="@string/address_email_mob"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="#000000"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/objective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_objective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/objective"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_objective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/objective_details"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/educational_qualification"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layout_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/temp4_border"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_table_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/temp4_border_bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <TextView
+                        android:id="@+id/txt_table_heading_degree"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/temp4_border_right"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="Degree/qualification"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_table_heading_university"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/temp4_border_right"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="University/board"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_table_heading_passout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/temp4_border_right"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="Year of passing"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_table_heading_percentage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="0.25"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="Percentage/CGPA"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_table_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:orientation="vertical"
+                    android:textColor="@android:color/black" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/work_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_work_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/work_exeperence"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/txt_write_work_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:textColor="@android:color/black" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/projects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_projects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/projects"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/txt_write_projects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:textColor="@android:color/black" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/research_paper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_research_paper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Research Paper:"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/txt_write_research_paper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:textColor="@android:color/black" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="left"
+                android:text="@string/skills"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skills_details"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/achievements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_achievements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="left"
+                android:text="@string/achievements"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_achievements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/achievements_details"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/extra_curricular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_extra_curricular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="left"
+                android:text="@string/extra_curricular"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_extra_curricular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/extra_curricular_details"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hobbies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_hobbies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="left"
+                android:text="@string/hobbies"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_hobbies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hobbies_details"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/strength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_strengths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="left"
+                android:text="@string/strengths"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_strengths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strengths_details"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/personal_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_personal_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/personal_details"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/txt_size" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:textSize="@dimen/text_size_small" -->
+            <!-- android:textColor="@android:color/black"/> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:id="@+id/txt_writ_personal_details" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:textColor="@android:color/black" -->
+            <!-- android:orientation="vertical" > -->
+            <!-- </LinearLayout> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_reference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/references"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/txt_write_reference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:textColor="@android:color/black" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/declaration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/view_dec"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#000000"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/txt_heading_declaration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/declaration"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_declaration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/declaration_details"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/date"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/place"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/txt_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:text="@string/signature"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+    </TableLayout>
+
+</ScrollView>

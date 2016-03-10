@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrl_image"
+    style="@style/edit_text_style_normal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_image"
+            style="@style/block_head_text_view_style_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_img_key" />
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="135dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_border"
+            android:src="@drawable/ic_default_image" >
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/layout_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/block_head_bg"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <Button
+                android:id="@+id/btn_upload_image"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/browse_border"
+                android:padding="0dp"
+                android:text="@string/btn_browse"
+                android:textColor="#0a4569"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_delete_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="@dimen/icon_padding_normal"
+                android:src="@drawable/ic_delete_dark" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,577 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrooltemplate2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20px" >
+
+    <LinearLayout
+        android:id="@+id/like_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/padding_haed_normal"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:text="@string/address"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/txt_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/padding_haed_normal"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:text="@string/contact"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/padding_haed_normal"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:text="@string/email_id"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#d3d3d3"
+            android:gravity="left"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="4px"
+            android:paddingLeft="4px"
+            android:paddingTop="4px"
+            android:text="@string/name_resume_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/objective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_heading_objective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:paddingRight="10px"
+                android:text="@string/objective"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_objective"
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/objective_details"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+         <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_heading_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:paddingRight="10px"
+                android:text="@string/educational_qualification"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/txt_write_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:textColor="@android:color/black" >
+            </LinearLayout>
+        </LinearLayout>
+
+         <View
+            android:id="@+id/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/work_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:orientation="horizontal"
+            android:paddingTop="10px"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_heading_work_experience"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:paddingRight="10px"
+                android:text="@string/work_exeperence"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/txt_write_work_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:textColor="@android:color/black" >
+            </LinearLayout>
+        </LinearLayout>
+
+         <View
+            android:id="@+id/view_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+        <LinearLayout
+            android:id="@+id/projects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingTop="10px"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_heading_projects"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:paddingRight="10px"
+                android:text="@string/projects"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/txt_write_projects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:textColor="@android:color/black" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/research_paper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingTop="10px"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_heading_research_paper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:paddingRight="10px"
+                android:text="@string/research_papers"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/txt_write_research_paper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:textColor="@android:color/black" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_heading_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:paddingRight="10px"
+                android:text="@string/skills"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_skills"
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/skills_details"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+         <View
+            android:id="@+id/view_6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/achievements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_heading_achievements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:paddingRight="10px"
+                android:text="@string/achievements"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_achievements"
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/achievements_details"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/strength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_heading_strengths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:paddingRight="10px"
+                android:text="@string/strengths"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_strengths"
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/strengths_details"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+         <View
+            android:id="@+id/view_8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/extra_curricular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_heading_extra_curricular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:paddingRight="10px"
+                android:text="@string/extra_curricular"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_extra_curricular"
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/extra_curricular_details"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+        <LinearLayout
+            android:id="@+id/hobbies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_heading_hobbies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:paddingRight="10px"
+                android:text="@string/hobbies"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_hobbies"
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/hobbies_details"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/personal_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_heading_personal_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:paddingRight="10px"
+                android:text="@string/personal_details"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_personal"
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal" />
+
+            <!-- <LinearLayout -->
+            <!-- android:id="@+id/txt_write_personal_details" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:orientation="vertical" -->
+            <!-- android:layout_weight="0.3" > -->
+            <!-- </LinearLayout> -->
+        </LinearLayout>
+
+         <View
+            android:id="@+id/view_11"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/reference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_heading_reference"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:paddingRight="10px"
+                android:text="@string/references"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/txt_write_reference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:textColor="@android:color/black" >
+            </LinearLayout>
+        </LinearLayout>
+
+         <View
+            android:id="@+id/view_12"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/declaration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_declaration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="8px"
+                android:paddingTop="8px"
+                android:text="@string/declaration"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_write_declaration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8px"
+                android:text="@string/declaration_details"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/txt_place"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/place"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/txt_signature"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:text="@string/signature"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="application_name">GX\nRESUME</string>
+    <string name="powerd_by">Powered by Grexoft Developers</string>
+    <string name="add_new_resume">CREATE RESUME</string>
+    <string name="privacy">PROTECT WITH PASSWORD</string>
+    <string name="save">SAVE RESUME FOR FUTURE USE</string>
+    <string name="template_description">TEMPLATES IN\nULTRA DECENT DESIGNS</string>
+    <string name="title_Resume">enter title</string>
+     <string name="change_password">Change your password</string>
+     <string name="old_password">old password</string>
+     <string name="new_password">new password</string>
+     <string name="authentication">Authenticate before delete</string>
+     <string name="authentication_hint">password</string>
+     <string name="on_back_press">Save changes before exit</string>
+
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.grexoft.resume"
+    android:versionCode="11"
+    android:versionName="1.1.2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <usespermission
+        android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <usespermission
+        android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <usespermission
+        android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <usespermission
+        android:name="android.permission.WRITE_CALENDAR"/>
+    <usespermission
+        android:name="android.permission.NFC"/>
+    <usespermission
+        android:name="android.permission.BLUETOOTH"/>
+    <usespermission
+        android:name="android.permission.VIBRATE"/>
+    <usespermission
+        android:name="android.permission.RECORD_AUDIO"/>
+
+
+    <application
+        android:name="com.grexoft.resume.GXResumeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity
+            android:name="com.grexoft.resume.GxResumeSplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.grexoft.resume.InfoActivity"
+            android:label="@string/title_activity_info"
+            android:screenOrientation="portrait" >
+        </activity>        
+        <activity
+            android:name="com.grexoft.resume.SavedActivity"
+            android:label="@string/title_activity_saved"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.grexoft.resume.TemplateChooserActivity"
+            android:label="@string/title_activity_view_templates"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="com.grexoft.resume.TemplatePreviewActivity"
+            android:label="@string/title_activity_template" 
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

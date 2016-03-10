@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_titleaddmore"
+        style="@style/block_head_text_view_style_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_more_key" />
+
+    <EditText
+        android:id="@+id/et_feildName"
+        style="@style/edit_text_style_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_field_name_key" />
+
+    <View
+        style="@style/seperator_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+</LinearLayout>

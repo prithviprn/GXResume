@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_fieldset"
+            style="@style/fieldset_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/form_box_bg"
+            android:padding="0.5dp" >
+
+            <TextView
+                style="@style/block_head_text_view_style_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/write_about_education" />
+
+            <EditText
+                android:id="@+id/etDedree"
+                style="@style/edit_text_style_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/degree_key" >
+            </EditText>
+
+            <View
+                style="@style/seperator_small"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <EditText
+                android:id="@+id/etcollege"
+                style="@style/edit_text_style_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/university_key" />
+
+            <View
+                style="@style/seperator_small"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <EditText
+                android:id="@+id/etyear"
+                style="@style/edit_text_style_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/passout_year_key" />
+
+            <View
+                style="@style/seperator_small"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <EditText
+                android:id="@+id/etcgpi"
+                style="@style/edit_text_style_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/result_key" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/degree_container"
+            style="@style/fieldset_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_fieldset" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

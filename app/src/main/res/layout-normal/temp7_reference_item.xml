@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_reference_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <com.grexoft.resume.widgets.TextViewWithFont
+            android:id="@+id/txt_full_name"
+            font:name="calibri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/referer_name_key"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_normal"
+            font:type="bold" />
+
+        <com.grexoft.resume.widgets.TextViewWithFont
+            android:id="@+id/txt_title_designation"
+            font:name="calibri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:text="@string/referer_job_designation_key"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/layout_reference_detail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <com.grexoft.resume.widgets.TextViewWithFont
+            android:id="@+id/txt_work_phone"
+            font:name="calibri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/work_phone_key"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <com.grexoft.resume.widgets.TextViewWithFont
+            android:id="@+id/txt_personal_phone"
+            font:name="calibri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:text="@string/personal_phone_key"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_reference_detail3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical" >
+
+        <com.grexoft.resume.widgets.TextViewWithFont
+            android:id="@+id/txt_email_address"
+            font:name="calibri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/referer_email_key"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <com.grexoft.resume.widgets.TextViewWithFont
+            android:id="@+id/txt_work_address"
+            font:name="calibri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/referer_work_address_key"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+</LinearLayout>

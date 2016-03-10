@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GX Resume</string>
+    <string name="welcome">Welcome To GXResume</string>
+    <string name="Saved">Open Saved Resume</string>
+    <string name="NewResume">New Resume</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_info">Information</string>
+    <string name="title">fragment name</string>
+    <string name="template_title">Template name</string>
+    <string name="help">HELP CONTENT</string>
+    <string name="title_activity_template1">Template1</string>
+    <string name="title_activity_template2">Template2</string>
+    <string name="title_activity_template3">Template3</string>
+    <string name="title_activity_template4">Template4</string>
+    <string name="title_activity_template5">Template5</string>
+    <string name="title_activity_template6">Template6</string>
+    <string name="title_activity_template7">Template7</string>
+    <string name="title_activity_template8">Template8</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_saved">SavedActivity</string>
+    <string name="title_activity_view_templates">Choose Template</string>
+    <string name="action_get_pdf">Get Pdf</string>
+    <string name="action_share">Share</string>
+    <string name="resume_title">Resume Title</string>
+    <string name="saved_resume">SAVED RESUMES</string>
+    <string name="no_resume">NO RESUMES HERE</string>
+    <string name="thanking">Thanks for using GX Resume</string>
+    <string name="directory_title">Your pdf file saved in SD card/My Resume/resumes</string>
+    <string name="share_ur_exp">Would you like to share your experience of using Gx Resume</string>
+    <string name="hobby_title">Add hobbies</string>
+     <string name="achievement_title">Add achievements</string>
+     <string name="strength_title">Add strengths</string>
+    <string name="extracarricular_title">Add extra curricular activities</string>
+    <string name="resume_password_optional">Password (optional)</string>
+    <string name="resume_password">Password</string>
+    <string name="create_new_resume">Create New Resume</string>
+    
+    
+    <string name="objective">OBJECTIVE</string>
+    <string name="objective_details">Your objective goes here</string>
+   
+    <string name="educational_qualification">EDUCATIONAL QUALIFICATION</string>
+    <string name="educational_details">Your education qualification goes here</string>
+    
+    <string name="work_exeperence">WORK EXEPERIENCE</string>
+    <string name="work_exeperence_details">Your work experience goes here</string>
+    
+    <string name="projects">PROJECTS</string>
+    <string name="projects_details">Your projects detail goes here</string>
+    
+    <string name="research_papers">RESEARCH PAPERS</string>
+    <string name="research_papers_details">Your research papers details goes here</string>
+    
+    <string name="skills">SKILLS</string>
+    <string name="skills_details">Your skills goes here</string>
+   
+    <string name="activities">ACTIVITIES</string>
+    <string name="activities_details">Your activities goes here</string>
+    
+    <string name="achievements">ACHIEVEMENTS</string>
+    <string name="achievements_details">Your achievements goes here</string>
+    
+    <string name="extra_curricular">EXTRA CURRICULAR ACTIVITIES</string>
+    <string name="extra_curricular_details">Your extra curricular activities goes here</string>
+    
+    <string name="hobbies">HOBBIES</string>
+    <string name="hobbies_details">Your hobies goes here</string>
+   
+    <string name="strengths">STRENGTHS</string>
+    <string name="strengths_details">Your strenths goes here</string>
+    
+    <string name="personal_details">PERSONAL DETAILS</string>
+    <string name="personal_informations">Your personal informations goes here</string>
+    
+    <string name="references">REFERENCES</string>
+    <string name="references_details">Your references goes here</string>
+   
+    <string name="declaration">DECLARATION</string>
+    <string name="declaration_details">Your declaration goes here</string>
+    
+    <string name="title_activity_splash">ResumeUniverse</string>
+    <string name="app_id">1665225473689055</string>
+    
+    <string name="your_name">Your Name</string>
+    <string name="contact">Your Contact</string>
+    <string name="email_id">Your Email</string>
+    <string name="address">Your Address</string>
+   
+    <string name="date">Date  :  </string>
+    <string name="place">Place  :  </string>
+    <string name="signature">Signature</string>
+
+    <!-- <string name="help">stirng for help fragments and buttons functionality</string> -->
+    <string name="fragment">Fragments</string>
+    <string name="contact_heading">Contact Information</string>
+    <string name="upload_image_heading">Upload Image</string>
+    <string name="personal_heading">Personal Information</string>
+    <string name="objective_heading">Objective</string>
+    <string name="education_heading">Education</string>
+    <string name="work_exp_heading">Work Experience</string>
+    <string name="research_heading">Research Paper</string>
+    <string name="projects_heading">Projects</string>
+    <string name="skills_heading">Skills</string>
+    <string name="activities_heading">Activities</string>
+    <string name="references_heading">References</string>
+    <string name="declaration_heading">Declaration</string>
+    <string name="buttons_heading">Buttons and their function</string>
+
+    <string name="contact_fragment">Here, input your contact details like address, contact no etc. in the respective fields.</string>
+    <string name="personal_fragment">In this form, enter your personal details such as Name, Father Name, Mother name etc. as declared in your Certificates or Documents. If you want to add additional information you can add custom fields value pears.</string>
+    <string name="image_fragment">Upload your image. The image will be placed on the Resume.\nNOTE: Images are not displayed in every template. There are special templates which have a place for image display.</string>
+    <string name="objective_fragment">Write your Objective. Objective means what will you do if you get selected.!</string>
+    <string name="education_fragment">Enter the details of your educational qualifications like HSC/SSC/AISCE/Intermedidiate or any Degree/Course</string>
+    <string name="work_exp_fragment">Enter your past working experience details here like where you worked earlier and during which period you were working there etc.\nNOTE: Leave all fields under this category empty if your a Fresher.</string>
+    <string name="research_fragment">Enter the details of your own Research papers here.\nNOTE: Leave all fields under this category empty if you do not have published any Research papers.</string>
+    <string name="projects_fragment">Enter the details of the projects you completed during your study or worked on any project privately after completing your studies.</string>
+    <string name="skills_fragment">Write the skills you have. Your skills reflect your personality and compatibility.</string>
+    <string name="activities_fragment">Mention the activities you are involved in your daily life. These also reflect your personality and compatibility.</string>
+    <string name="reference_fragment">Enter the details of the persons who are referring you for a particular job at a particular place.\nNOTE: Leave all fields under this category empty if you are not referred by anyone oor if you are applying on your own.</string>
+    <string name="declaration_fragment">Tap one declaration among the given declarations or enter custom declaration of your own.</string>
+    <string name="next_button">Tap it to go to the next screen. (When it becomes disabled, then there is no other field left empty).</string>
+    <string name="prev_button">Tap it if you want to go to previous screen.</string>
+    <string name="add_button">Tap it if you want to add fields to input additional information (fields for whom are not already there).</string>
+    <string name="save_button">Tap it to save the information you enetered.</string>
+    <string name="template_button">Tap it to view the list of available templates and select from there, the template in which you want to get pdf copy of your resume.</string>
+    <string name="title_activity_template">TemplateActivity</string>
+    
+     <string name="get_pdf">Tapping on it generates pdf of your resume, and saves it on your device.</string>
+     <string name="view_pdf">This button will be enabled only after pdf is generated (by tapping on Get pdf). Tapping on this option opens the generated pdf copy using the pdf viewing app installed on your device.</string>
+     <string name="rate_us"> Rate this app, share your experience of using this app and give suggestions for improving it (if any). Tapping on this link redirects you to the Playstore.</string>
+     <string name="share_pdf">You can share your pdf copy through mail or any other sharing platforms available on your device. This link will be enabled only after generating the pdf (by tapping on "Get pdf").</string>
+     <string name="preference">You can share your pdf copy through mail or any other sharing platforms available on your device. This link will be enabled only after generating the pdf (by tapping on "Get pdf").</string>
+
+     
+     <string name="stand_out_resume">Stand Out Resume</string>
+     <string name="loft_resume">Loft Resume</string>
+     <string name="impressive_resume">Impressive Resume</string>
+     <string name="professional_resume">Professional Resume</string>
+     <string name="elegant_resume">Elegant Resume</string>
+     <string name="classical_resume">Classical Resume</string>
+     <string name="simple_resume">Simple Resume</string>
+     <string name="standard_resume">Standard Resume</string>
+     <string name="targeted_resume">Targeted Resume</string>
+    <string name="new_resume">New Resume</string>
+
+
+</resources>

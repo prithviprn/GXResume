@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:id="@+id/mytemplate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="15px" >
+
+        <LinearLayout
+            android:id="@+id/contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <LinearLayout
+                android:id="@+id/contacts_child1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/padding_haed_small"
+                android:orientation="vertical"
+                 android:gravity="bottom"
+                android:layout_weight="0.7" >
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resume_title"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_id"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/txt_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contacts_child2"
+                 android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:layout_weight="0.3" >
+
+                <ImageView
+                    android:id="@+id/image_png"
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="right"
+                    android:background="@android:color/white"
+                    android:cropToPadding="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/objective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="5dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tr6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_heading_objective"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:textColor="@android:color/black"
+                    android:padding="4dp"
+                    android:text="@string/objective"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/txt_write_objective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/objective_details"
+                style="@style/padding_haed_small"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tr7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                
+                
+                <TextView
+                    android:id="@+id/txt_heading_education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/educational_qualification"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+           <LinearLayout
+            android:id="@+id/txt_write_education"
+            android:layout_width="match_parent"
+            style="@style/padding_haed_small"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/work_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tr8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_heading_work_experience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/work_exeperence"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/txt_write_work_experience"
+               android:layout_width="match_parent"
+               style="@style/padding_haed_small"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textColor="@android:color/black" >
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/projects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tr10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_heading_projects"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/projects"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/txt_write_projects"
+                android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/padding_haed_small"
+            android:textColor="@android:color/black"
+            android:orientation="vertical" >
+        </LinearLayout>
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/research_paper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tr11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_heading_research_paper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/research_papers"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/txt_write_research_paper"
+                android:layout_width="match_parent"
+                style="@style/padding_haed_small"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="vertical" >
+        </LinearLayout>
+        </LinearLayout>
+        
+        
+         <LinearLayout
+            android:id="@+id/skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tr9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_heading_skills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/skills"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/txt_write_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/skills_details"
+                style="@style/padding_haed_small"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/strength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tr12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_heading_strengths"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/strengths"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/txt_write_strengths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/strengths_details"
+                style="@style/padding_haed_small"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hobbies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tr13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_heading_hobbies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/hobbies"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/txt_write_hobbies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hobbies_details"
+                style="@style/padding_haed_small"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/achievements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tr14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_heading_achievements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/achievements"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/txt_write_achievements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/achievements_details"
+                style="@style/padding_haed_small"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/extra_curricular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tr15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_heading_extra_curricular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/extra_curricular"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/txt_write_extra_curricular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/extra_curricular_details"
+                style="@style/padding_haed_small"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/personal_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tr16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_heading_personal_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/personal_details"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+            </TableRow>
+            
+<!--             <TextView  -->
+<!--                 android:id="@+id/txt_size" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:textSize="@dimen/text_size_small" -->
+<!--                 android:textColor="@android:color/black"/> -->
+
+<!--             <LinearLayout -->
+<!--                 android:id="@+id/txt_write_personal_details" -->
+<!--                 android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:orientation="horizontal" -->
+<!--             android:textColor="@android:color/black" -->
+<!--             android:layout_marginTop="2dp" > -->
+<!--         </LinearLayout> -->
+        </LinearLayout>
+        
+        
+         <LinearLayout
+            android:id="@+id/reference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heading_reference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:padding="4dp"
+                android:text="@string/references"
+                android:layout_marginBottom="4dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/txt_write_reference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:orientation="vertical" >
+                
+                
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/declaration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tr17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_heading_declaration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/declaration"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/txt_write_declaration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/declaration_details"
+                style="@style/padding_haed_small"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/padding_haed_small"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tr18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" >
+
+                <TextView
+                    android:id="@+id/txt_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@android:color/black"
+                    android:text="@string/place"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/txt_signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="@string/signature"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_small" />
+            </TableRow>
+        </LinearLayout>
+    </TableLayout>
+
+</ScrollView>

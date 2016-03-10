@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layoutcomname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/tv_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/company_name_key"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_work_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:text="@string/duration_key"
+            android:textSize="@dimen/text_size_xlarge"
+             android:textColor="@android:color/black"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_job_design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textColor="@android:color/black"
+            android:text="@string/job_desig_key"
+            android:textSize="@dimen/text_size_xlarge" />
+
+        <TextView
+            android:id="@+id/tv_job_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textColor="@android:color/black"
+            android:text="@string/description_key"
+            android:textSize="@dimen/text_size_xlarge" />
+    </LinearLayout>
+
+</LinearLayout>

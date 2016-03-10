@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_table_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/temp4_border_bottom"
+    android:orientation="horizontal"
+    android:textColor="@android:color/black"
+    android:weightSum="1.0" >
+
+    <TextView
+        android:id="@+id/txt_table_heading_degree"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="0.25"
+        android:background="@drawable/temp4_border_right"
+        android:gravity="left"
+        android:padding="15dp"
+        android:text="@string/degree_key"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_xlarge" />
+
+    <TextView
+        android:id="@+id/txt_table_heading_university"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="0.25"
+        android:background="@drawable/temp4_border_right"
+        android:gravity="left"
+        android:padding="15dp"
+        android:text="@string/university_key"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_xlarge" />
+
+    <TextView
+        android:id="@+id/txt_table_heading_passout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="0.25"
+        android:background="@drawable/temp4_border_right"
+        android:gravity="left"
+        android:padding="15dp"
+        android:text="@string/passout_year_key"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_xlarge" />
+
+    <TextView
+        android:id="@+id/txt_table_heading_percentage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="0.25"
+        android:gravity="left"
+        android:padding="15dp"
+        android:text="@string/result_key"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_xlarge" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        style="@style/fieldset_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_box_bg"
+        android:layout_margin="5dp"
+        android:padding="0.5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/block_head_bg"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/Skills_Header"
+                style="@style/block_head_text_view_style_large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="@string/skill_key" />
+
+            <ImageView
+                android:id="@+id/btn_addSkills"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:padding="@dimen/icon_padding_large"
+                android:src="@drawable/ic_plus_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skills_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

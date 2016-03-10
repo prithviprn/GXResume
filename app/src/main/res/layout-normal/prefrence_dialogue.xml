@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/block_head_bg"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txt_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prefrence_key"
+            android:textColor="@color/text_color_dark"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/show_title_of_resume"
+            style="@style/preference_item_layout">
+
+            <TextView
+                android:id="@+id/txt_show_title"
+                android:text="@string/show_title_key"
+                style="@style/preference_item_label"/>
+
+            <Switch
+                android:id="@+id/switch_title"
+                style="@style/preference_item_compound_button"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/show_image_in_resume"
+            style="@style/preference_item_layout">
+
+            <TextView
+                android:id="@+id/txt_show_image"
+                android:text="@string/show_image_key"
+                style="@style/preference_item_label"/>
+
+            <Switch
+                android:id="@+id/switch_image"
+                style="@style/preference_item_compound_button"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/preference_item_layout">
+
+            <TextView
+                android:text="@string/title_text_size"
+                style="@style/preference_item_label"/>
+
+            <SeekBar
+                android:id="@+id/seek_text_size_title"
+                style="@style/preference_item_compound_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/preference_item_layout">
+
+            <TextView
+                android:text="@string/title_font_family"
+                style="@style/preference_item_label"/>
+
+            <Spinner
+                android:id="@+id/spinner_title_font"
+                android:entries="@array/font_family"
+                style="@style/preference_item_compound_button"></Spinner>
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/preference_item_layout">
+
+            <TextView
+                android:text="@string/heading_text_size"
+                style="@style/preference_item_label"/>
+
+            <SeekBar
+                android:id="@+id/seek_text_size_heading"
+                style="@style/preference_item_compound_button"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            style="@style/preference_item_layout">
+
+            <TextView
+                android:text="@string/heading_font_family"
+                style="@style/preference_item_label"/>
+
+            <Spinner
+                android:id="@+id/spinner_heading_font"
+                android:entries="@array/font_family"
+                style="@style/preference_item_compound_button"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout style="@style/preference_item_layout">
+
+            <TextView
+                android:text="@string/content_text_size"
+                style="@style/preference_item_label"/>
+
+            <SeekBar
+                android:id="@+id/seek_text_size_content"
+                style="@style/preference_item_compound_button"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/preference_item_layout">
+
+            <TextView
+                android:text="@string/content_font_family"
+                style="@style/preference_item_label"/>
+
+            <Spinner
+                android:id="@+id/spinner_content_font"
+                style="@style/preference_item_compound_button"
+                android:entries="@array/font_family"></Spinner>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
